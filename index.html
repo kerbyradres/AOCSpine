@@ -1,0 +1,120 @@
+<HEAD>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <title>AO Cervical Spine Injury Classification System Report Generator</title>
+</HEAD>
+
+<BODY>
+  <!-- HEADER -->
+  <div class="h1 container">
+    <h1>AO Cervical Spine Injury Report Generator</h1>
+  </div>
+  
+  <!-- LEVEL -->
+  <div class="container">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title"><abbr id="h2level">Level</abbr></h2>
+    </div>
+    <div class="panel-body">
+      <div class="btn-group" id="divLevel">
+        <button type="radio" class="btn btn-default" id="c0" margin="auto">C0</button>
+        <button type="radio" class="btn btn-default" id="c1" margin="auto">C1</button>
+        <button type="radio" class="btn btn-default" id="c2" margin="auto">C2</button>
+        <button type="radio" class="btn btn-default" id="c2" margin="auto">C3</button>
+        <button type="radio" class="btn btn-default" id="c3" margin="auto">C4</button>
+        <button type="radio" class="btn btn-default" id="c4" margin="auto">C5</button>
+        <button type="radio" class="btn btn-default" id="c5" margin="auto">C6</button>
+        <button type="radio" class="btn btn-default" id="c6" margin="auto">C7</button>
+      </div>
+    </div>
+  </div>
+    
+  <!-- UPPER CERVICAL -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title"><abbr id="h2upper">Upper Cervical Injury</abbr></h2>
+    </div>
+    <div class="panel-body">
+      <div class="btn-group" id="divUpper">
+        <button type="radio" class="btn btn-default" id="A" margin="auto">Type A</button>
+        <button type="radio" class="btn btn-default" id="B" margin="auto">Type B</button>
+        <button type="radio" class="btn btn-default" id="C" margin="auto">Type C</button>
+      </div>
+    </div>
+  </div>
+    
+  <!-- SUBAXIAL -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title"><abbr id="h2subaxial">Subaxial Injury</abbr></h2>
+    </div>
+    <div class="panel-body">
+      <div class="btn-group" id="divSubaxial">
+        <button type="radio" class="btn btn-default" id="A0" margin="auto">A0</button>
+        <button type="radio" class="btn btn-default" id="A1" margin="auto">A1</button>
+        <button type="radio" class="btn btn-default" id="A2" margin="auto">A2</button>
+        <button type="radio" class="btn btn-default" id="A3" margin="auto">A3</button>
+        <button type="radio" class="btn btn-default" id="A4" margin="auto">A4</button>
+      </div>
+      <br/>
+      <div class="btn-group" id="divSubaxial">
+        <button type="radio" class="btn btn-default" id="B1" margin="auto">B1</button>
+        <button type="radio" class="btn btn-default" id="B2" margin="auto">B2</button>
+        <button type="radio" class="btn btn-default" id="B3" margin="auto">B3</button>
+      </div>
+      <br/>
+      <div class="btn-group" id="divSubaxial">
+        <button type="radio" class="btn btn-default" id="CC" margin="auto">C</button>
+      </div>
+      <br/>
+      <div class="btn-group" id="divSubaxial">
+        <button type="radio" class="btn btn-default" id="F1" margin="auto">F1</button>
+        <button type="radio" class="btn btn-default" id="F2" margin="auto">F2</button>
+        <button type="radio" class="btn btn-default" id="F3" margin="auto">F3</button>
+        <button type="radio" class="btn btn-default" id="F4" margin="auto">F4</button>
+      </div>
+      <div class="btn-group" id="divSubaxial">
+        <button type="radio" class="btn btn-default" id="BL" margin="auto">BL</button>
+      </div>
+    </div>
+    </div> 
+  
+  <!-- HINTS CHECKBOX -->
+  <div>
+    <input type="checkbox" id="cbHints">
+    <label for="cbHints" class="h4">Show Hints</label>
+  </div>
+  
+  <!-- REPORT -->
+  <div class="editable" id="textareaReport" contenteditable="true">
+    No cervical spine injury.
+  </div>
+  <button id="btnSelectAll" class="btn btn-success">Select All</button>
+  <button id="btnReset" class="btn btn-warning">Reset All</button>
+  </div>
+
+<hr>
+  <FOOTER>
+    <div class="container">
+      <p>&copy; 2022 <a href="mailto:kerbyradres@gmail.com">Justin Kerby</a></p>
+    </div>
+  </FOOTER>
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+  
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</BODY>
